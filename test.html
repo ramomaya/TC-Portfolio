@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roolijako - Interaktiivinen</title>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Projektitiimin Roolit</h1>
+    <p class="subtitle">Klikkaa roolia nähdäksesi lisätietoja</p>
+
+    <div class="grid-container">
+      <!-- Ylärivin kaksi laatikkoa -->
+      <div class="circle-box top-row" onclick="toggleContent('figma')">
+        <div class="box-header">
+          <i class="fas fa-palette"></i>
+          <h2>Figma Designer</h2>
+          <i class="fas fa-chevron-down arrow" id="arrow-figma"></i>
+        </div>
+        <div class="box-content" id="content-figma">
+          <p><strong>Lyhyt esittely:</strong> Vastaa UI/UX-suunnittelusta, prototyyppien luomisesta ja
+            frontend-toteutukseen tarvittavien resurssien valmistelusta.</p>
+          <ul>
+            <li><strong>Miten tein käytännössä:</strong> Suunnittelin käyttöliittymän komponentit ja työnkulut Figmassa.
+            </li>
+            <li><strong>Visuaalinen ajattelu:</strong> Keskityn käyttäjäkokemuksen ja visuaalisen selkeyden
+              yhdistämiseen.</li>
+            <li><strong>Mitä opin:</strong> Komponenttien uusiokäytön ja design systemien tärkeyden.</li>
+            <li><strong>Mitä tekisin nyt toisin:</strong> Koodaajille suunnattujen kommenttien lisääminen suunnitelmiin.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="circle-box top-row" onclick="toggleContent('frontend')">
+        <div class="box-header">
+          <i class="fas fa-code"></i>
+          <h2>Frontend Developer</h2>
+          <i class="fas fa-chevron-down arrow" id="arrow-frontend"></i>
+        </div>
+        <div class="box-content" id="content-frontend">
+          <p><strong>Lyhyt esittely:</strong> Rakentaa käyttöliittymän Figma-suunnitelmien pohjalta ja toteuttaa
+            keskeiset näkymät sekä käyttäjäinteraktiot.</p>
+          <ul>
+            <li><strong>Miten tein käytännössä:</strong> Muunsin Figma-suunnitelmat HTML/CSS/JS-koodiksi.</li>
+            <li><strong>Visuaalinen ajattelu:</strong> Huomioin responsiivisuuden ja saavutettavuuden jokaista
+              komponenttia suunnitellessa.</li>
+            <li><strong>Mitä opin:</strong> React-komponenttien tehokas uusiokäyttö ja tilanhallinta.</li>
+            <li><strong>Mitä tekisin nyt toisin:</strong> Enemmän yksikkötestejä komponenteille.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Alarivin kaksi laatikkoa -->
+      <div class="circle-box bottom-row" onclick="toggleContent('database')">
+        <div class="box-header">
+          <i class="fas fa-database"></i>
+          <h2>Database Design</h2>
+          <i class="fas fa-chevron-down arrow" id="arrow-database"></i>
+        </div>
+        <div class="box-content" id="content-database">
+          <p><strong>Lyhyt esittely:</strong> Suunnittelee tietokannan rakenteen, taulujen väliset relaatiot ja datan
+            virtauksen, jotka tukevat sovelluksen toiminnallisuuksia.</p>
+          <ul>
+            <li><strong>Miten tein käytännössä:</strong> Luin ER-kaavioita ja normalisoin tietokantarakenteita.</li>
+            <li><strong>Visuaalinen ajattelu:</strong> Keskityin siihen, miten data liikkuu ja miten se voidaan hakea
+              tehokkaasti.</li>
+            <li><strong>Mitä opin:</strong> Indeksien tärkeys suorituskyvyn kannalta.</li>
+            <li><strong>Mitä tekisin nyt toisin:</strong> Lisäisin enemmän dokumentaatiota kuhunkin tauluun.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="circle-box bottom-row" onclick="toggleContent('tester')">
+        <div class="box-header">
+          <i class="fas fa-bug"></i>
+          <h2>Tester</h2>
+          <i class="fas fa-chevron-down arrow" id="arrow-tester"></i>
+        </div>
+        <div class="box-content" id="content-tester">
+          <p><strong>Lyhyt esittely:</strong> Testaa keskeisiä ominaisuuksia, tunnistaa bugeja ja varmistaa, että
+            sovellus toimii odotetulla tavalla käyttäjän näkökulmasta.</p>
+          <ul>
+            <li><strong>Miten tein käytännössä:</strong> Suoritin manuaalisia ja automatisoituja testejä eri
+              käyttötapauksille.</li>
+            <li><strong>Visuaalinen ajattelu:</strong> Yritin nähdä sovelluksen "rikkinäisin silmin" löytääkseni
+              mahdollisia ongelmia.</li>
+            <li><strong>Mitä opin:</strong> Testauskattavuuden tärkeys ja bugiraportoinnin parhaat käytännöt.</li>
+            <li><strong>Mitä tekisin nyt toisin:</strong> Automatisoisin enemmän toistuvia testitapauksia.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleContent(boxId) {
+      const content = document.getElementById(`content-${boxId}`);
+      const arrow = document.getElementById(`arrow-${boxId}`);
+
+      // Toggle sisällön näkyvyys
+      content.classList.toggle('open');
+
+      // Toggle nuolen suunta
+      if (content.classList.contains('open')) {
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    // Voit myös lisätä alustavan tilan, jossa yksi laatikko on auki
+    document.addEventListener('DOMContentLoaded', function () {
+      // Avaa ensimmäisen laatikon automaattisesti
+      toggleContent('figma');
+    });
+  </script>
+
+</body>
+
+</html>

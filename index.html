@@ -3,12 +3,352 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Paprika&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>TC-portfolio</title>
+  <link rel="stylesheet" href="index.css">
+
+
 </head>
 
 <body>
-  <h1>TC-portfolio</h1>
-  <p>Tämä on minun TC-portfolioni.</p>
+  <!-- <h1>Role 1: Figma / UI Design</h1>
+  <h2>for Portfolio</h2>
+  <h3>User Interface Design</h3> -->
+  <!-- <img src="images/ui.png" alt="Käyttöliittymän näkymä"> -->
+  <!-- <h3>Information:</h3>
+
+  <div class="Information">
+    <p>Name: Maya Ramo</p>
+    <p>Study: Business Information Technology</p>
+    <p>Specialized: User Interface Design and Software Development</p>
+
+    <div class="image">
+      <img class="kuva" src="images/maya.jpeg" alt="mayakuva">
+    </div>
+
+  </div> -->
+
+  <!-- <h3 class="section-title">About Me</h3>
+
+  <div class="about-card">
+    <div class="about-image">
+      <img src="images/maya.jpeg" alt="Photo of Maya Ramo">
+    </div>
+
+    <div class="about-text">
+      <h4 class="name">Maya Ramo</h4>
+      <p class="study">Business Information Technology student</p>
+      <p class="specialization">
+        Specialized in UI Design and Software Development
+      </p>
+    </div>
+  </div> -->
+
+  <section class="about-hero">
+    <div class="about-card">
+      <img class="profile-img" src="images/maya.jpeg" alt="Photo of Maya Ramo">
+
+      <h2 class="about-name">Maya Ramo</h2>
+      <p class="study">Business Information Technology</p>
+      <p class="specialization">
+        UI Design & Software Development
+      </p>
+
+      <div class="social-icons">
+        <a href="https://github.com/USERNAME" target="_blank">
+          <img src="icons/github.svg" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/USERNAME" target="_blank">
+          <img src="icons/linkedin.svg" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="tc-project-box">
+    <h1 class="otsikko">During the TC project, I worked in multiple roles covering design, development, and testing.
+    </h1>
+
+    <div class="role-card" onclick="toggleContent('figma')">
+      <div class="role-icon">🖌️</div>
+      <div class="role-title">Figma Suunnittelu</div>
+      <div class="role-description">
+        Responsible for designing the UI/UX, creating prototypes, and preparing assets for frontend implementation
+      </div>
+
+    </div>
+
+    <div class="role-card" onclick="toggleContent('frontend')">
+      <div class="role-icon">🎨</div>
+      <div class="role-title">Frontend Kehittäjä</div>
+      <div class="role-description">
+        Built the user interface based on Figma designs and implemented core views and user interactions
+      </div>
+      <!-- <div class="role-tag">Frontend</div> -->
+    </div>
+
+    <div class="role-card" onclick="toggleContent('database')">
+      <div class="role-icon">🗄️</div>
+      <div class="role-title">Tietokanta Suunnittelu</div>
+      <div class="role-description">
+        Designed the database structure, relationships, and data flow to supports the application's functionality
+      </div>
+      <!-- <div class="role-tag">Frontend</div> -->
+    </div>
+
+    <div class="role-card" onclick="toggleContent('tester')">
+      <div class="role-icon">🧪</div>
+      <div class="role-title">Testaaja</div>
+      <div class="role-description">
+        Tested core features, identified bugs, and ensured the application works as expected from a user’s perspective.
+      </div>
+      <!-- <div class="role-tag">Frontend</div> -->
+    </div>
+
+  </div>
+
+
+  <!-- <script>
+    function toggleRole(roleId) {
+      const content = document.getElementById(`content-${roleId}`);
+      const arrow = document.getElementById(`arrow-${roleId}`);
+
+      // Toggle sisällön näkyvyys
+      if (content.style.display === 'block' || content.classList.contains('open')) {
+        content.style.display = 'none';
+        content.classList.remove('open');
+        arrow.style.transform = 'rotate(0deg)';
+      } else {
+        content.style.display = 'block';
+        content.classList.add('open');
+        arrow.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script> -->
+
+  <div class="grid-container">
+    <!-- Ylärivin kaksi laatikkoa -->
+    <div class="circle-box top-row" onclick="toggleContent('figma')">
+      <div class="box-header">
+        <div class="roleicon">🖌️</div>
+        <h2>Figma Suunnittelu</h2>
+        <i class="fas fa-chevron-down arrow" id="arrow-figma"></i>
+      </div>
+
+      <div class="box-content" id="content-figma">
+        <div class="viiva"></div>
+
+        <p><strong>Lyhyt esittely:</strong> Vastasin käyttöliittymäsuunnittelusta Figmassa. Tavoitteena oli luoda selkeä
+          ja helppokäyttöinen näkymä, jossa käyttäjä voi selata ja hakea etusivulla tuoteryhmä mukaisesti. Samalla
+          tuottaja
+          voi kirjautua sisään ja lisätä omia tuotteitaan.
+        </p>
+        <div class="design-comparison">
+          <figure>
+            <img src="images/VanhaversioFigma.png" alt="Old version" class="zoomable">
+            <figcaption>Vanha versio</figcaption>
+          </figure>
+
+          <span class="design-arrow">→</span>
+
+          <figure>
+            <img src="images/UudenversioFigma.png" alt="New version" class="zoomable">
+            <figcaption>Loppu versio</figcaption>
+          </figure>
+        </div>
+        <ul>
+          <li><strong>Miten tein käytännössä:</strong> Suunnittelin käyttöliittymän näkymiä ja käyttäjäpolkuja Figmassa.
+            Tein aluksi version rakenteesta ja toiminnoista, jonka pohjalta kehitimme projektin tarpeisiin sopivan uuden
+            version. Huomioin suunnittelussa myös frontend‑toteutuksen vaatimukset.
+
+            <div class="designcomparison">
+              <figure>
+                <img src="images/vanhaEtusivu.png" alt="Old version" class="zoomable">
+                <figcaption>Vanha Etusivu</figcaption>
+              </figure>
+
+              <span class="designarrow">→</span>
+
+              <figure>
+                <img src="images/uusiEtusivu.png" alt="New version" class="zoomable">
+                <figcaption>Loppu Etusivu</figcaption>
+              </figure>
+            </div>
+          </li>
+          <li><strong>Visuaalinen ajattelu:</strong> Vanhassa versiossa painopiste oli sisällön esittämisessä, kuten
+            käyttäjäpolun toiminnassa ja tuottajan näkymässä. Uudessa versiossa paransin kontrasteja ja typografiaa,
+            minkä ansiosta tärkeät toiminnallisuudet toimivat paremmin ja käyttöliittymä tuntuu selkeämmältä.
+
+            <div class="designcomparison">
+              <figure>
+                <img src="images/vanhanappit.png" alt="Old version" class="zoomable">
+                <figcaption>Vanhat nappit</figcaption>
+              </figure>
+
+              <span class="designarrow">→</span>
+
+              <figure>
+                <img src="images/uusinappit.png" alt="New version" class="zoomable">
+                <figcaption>Lopput nappit</figcaption>
+              </figure>
+            </div>
+          </li>
+          <li><strong>Mitä opin:</strong>
+            <br>
+            <ul class="mitaopin">
+              <li>Opin, että projektin alussa kannattaa tehdä yksinkertainen versio ja kehittää sitä vähitellen
+                eteenpäin</li>
+              <li>Opin myös käyttämään komponentteja ja ryhmittelyä Figmassa, ja huomasin, että ilman niitä
+                suunnittelussa eteneminen on todella hankalaa</li>
+              <li>Lisäksi opin, miten prototyyppi toimii Figmassa, kuten kuvakkeiden klikkaaminen ja siirtymät eri
+                välilehtien välillä</li>
+              <li>Opin myös hyödyntämään kontrasteja, esimerkiksi värien sävyjä ja erottuvuutta, jotta käyttöliittymästä
+                tulee selkeämpi ja saavutettavampi</li>
+              <li>Ymmärsin samalla paremmin, miten suunnittelu tukee sujuvaa frontend‑kehitystä.</li>
+            </ul>
+
+            <div class="designcomparison">
+              <figure>
+                <img src="images/vanhavari.png" alt="Old version" class="zoomable">
+                <figcaption>Vanha väri</figcaption>
+              </figure>
+
+              <span class="designarrow">→</span>
+
+              <figure>
+                <img src="images/uusivari.png" alt="New version" class="zoomable">
+                <figcaption>Loppu väri</figcaption>
+              </figure>
+            </div>
+
+          </li>
+
+          <li><strong>Mitä tekisin nyt toisin:</strong> Alussa olisin voinut käyttää enemmän komponentteja ja
+            ryhmittelyä suunnittelussa. Olisin myös voinut oppia enemmän Figman ominaisuuksista, kuten prototyypeistä.
+            Lisäksi dokumentoisin suunnitteluratkaisut tarkemmin kehittäjiä varten, jotta toteutusvaihe olisi vielä
+            sujuvampi.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="circle-box top-row" onclick="toggleContent('frontend')">
+      <div class="box-header">
+        <div class="roleicon">🎨</div>
+        <h2>Frontend Kehittäjä</h2>
+        <i class="fas fa-chevron-down arrow" id="arrow-frontend"></i>
+      </div>
+      <div class="box-content" id="content-frontend">
+        <div class="viiva"></div>
+        <p><strong>Lyhyt esittely:</strong> Rakentaa käyttöliittymän Figma-suunnitelmien pohjalta ja toteuttaa
+          keskeiset näkymät sekä käyttäjäinteraktiot.</p>
+        <ul>
+          <li><strong>Miten tein käytännössä:</strong> Muunsin Figma-suunnitelmat HTML/CSS/JS-koodiksi.</li>
+          <li><strong>Visuaalinen ajattelu:</strong> Huomioin responsiivisuuden ja saavutettavuuden jokaista
+            komponenttia suunnitellessa.</li>
+          <li><strong>Mitä opin:</strong> React-komponenttien tehokas uusiokäyttö ja tilanhallinta.</li>
+          <li><strong>Mitä tekisin nyt toisin:</strong> Enemmän yksikkötestejä komponenteille.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Alarivin kaksi laatikkoa -->
+    <div class="circle-box bottom-row" onclick="toggleContent('database')">
+      <div class="box-header">
+        <div class="roleicon">🗄️</div>
+        <h2>Tietokanta Suunnittelu</h2>
+        <i class="fas fa-chevron-down arrow" id="arrow-database"></i>
+      </div>
+      <div class="box-content" id="content-database">
+        <div class="viiva"></div>
+        <p><strong>Lyhyt esittely:</strong> Suunnittelee tietokannan rakenteen, taulujen väliset relaatiot ja datan
+          virtauksen, jotka tukevat sovelluksen toiminnallisuuksia.</p>
+        <ul>
+          <li><strong>Miten tein käytännössä:</strong> Luin ER-kaavioita ja normalisoin tietokantarakenteita.</li>
+          <li><strong>Visuaalinen ajattelu:</strong> Keskityin siihen, miten data liikkuu ja miten se voidaan hakea
+            tehokkaasti.</li>
+          <li><strong>Mitä opin:</strong> Indeksien tärkeys suorituskyvyn kannalta.</li>
+          <li><strong>Mitä tekisin nyt toisin:</strong> Lisäisin enemmän dokumentaatiota kuhunkin tauluun.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="circle-box bottom-row" onclick="toggleContent('tester')">
+      <div class="box-header">
+        <div class="roleicon">🧪</div>
+        <h2>Testaaja</h2>
+        <i class="fas fa-chevron-down arrow" id="arrow-tester"></i>
+      </div>
+      <div class="box-content" id="content-tester">
+        <div class="viiva"></div>
+        <p><strong>Lyhyt esittely:</strong> Testaa keskeisiä ominaisuuksia, tunnistaa bugeja ja varmistaa, että
+          sovellus toimii odotetulla tavalla käyttäjän näkökulmasta.</p>
+        <ul>
+          <li><strong>Miten tein käytännössä:</strong> Suoritin manuaalisia ja automatisoituja testejä eri
+            käyttötapauksille.</li>
+          <li><strong>Visuaalinen ajattelu:</strong> Yritin nähdä sovelluksen "rikkinäisin silmin" löytääkseni
+            mahdollisia ongelmia.</li>
+          <li><strong>Mitä opin:</strong> Testauskattavuuden tärkeys ja bugiraportoinnin parhaat käytännöt.</li>
+          <li><strong>Mitä tekisin nyt toisin:</strong> Automatisoisin enemmän toistuvia testitapauksia.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="image-modal" id="imageModal">
+    <img id="modalImage" alt="modalImage">
+  </div>
+
+  <script>
+    function toggleContent(boxId) {
+      const content = document.getElementById(`content-${boxId}`);
+      const arrow = document.getElementById(`arrow-${boxId}`);
+
+      // Toggle sisällön näkyvyys
+      content.classList.toggle('open');
+
+      // Toggle nuolen suunta
+      if (content.classList.contains('open')) {
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    // Voit myös lisätä alustavan tilan, jossa yksi laatikko on auki
+    document.addEventListener('DOMContentLoaded', function () {
+      // Avaa ensimmäisen laatikon automaattisesti
+      // toggleContent('figma');
+    });
+
+
+    // Image zoom
+    document.querySelectorAll('.zoomable').forEach(img => {
+      img.addEventListener('click', () => {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        modalImg.src = img.src;
+        modal.style.display = 'flex';
+      });
+    });
+
+    document.getElementById('imageModal').addEventListener('click', () => {
+      document.getElementById('imageModal').style.display = 'none';
+      toggleContent('figma');
+    });
+
+  </script>
+
 </body>
 
 </html>
