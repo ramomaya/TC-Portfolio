@@ -6,6 +6,8 @@ REKO on verkkosovellus, joka yhdistää paikalliset ruoantuottajat ja kuluttajat
 
 Projekti on toteutettu kouluprojektina oppimistarkoituksessa JAMKin TICorporate Demo Labissa, eikä siitä ole varsinaista tuotantokäyttöön julkaistua versiota.
 
+---
+
 ### 🧩 Oma roolini
 
 Projektissa toimin useassa roolissa:
@@ -20,6 +22,8 @@ Projektissa toimin useassa roolissa:
 
 - Tiimityö ja kommunikointi
 
+---
+
 ### 🛠️ Teknologiat ja työkalut
 
 - Figma
@@ -32,11 +36,15 @@ Projektissa toimin useassa roolissa:
 
 - Git & GitHub
 
+---
+
 ### 🧪 Testaus
 
 Projektissa tehtiin saavutettavuus-, käytettävyys- ja yhteensopivuustestauksia sekä Cypress-testausta (4 käyttäjäpolkua). Lisäksi toteutettiin yksi yksikkötesti Vitestillä.
 
 Sovellusta esiteltiin myös JAMKin Hakijan päivässä, jossa saatiin positiivista palautetta käyttäjiltä.
+
+---
 
 ### 🌱 Mitä opin
 
@@ -48,7 +56,11 @@ Sovellusta esiteltiin myös JAMKin Hakijan päivässä, jossa saatiin positiivis
 
 - Tiimityöskentelyn ja kommunikoinnin tärkeys
 
+---
+
 ### 🔗 Linkit
 
 - RekoRinki gitHub-repo: (https://github.com/jamktiko/RekoRinki.git)
 - Portfolio gitHub-sivu: (https://ramomaya.github.io/TC-Portfolio/)
+
+---
