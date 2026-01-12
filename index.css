@@ -35,7 +35,7 @@ body {
 
 .role-icon {
   font-size: 50px;
-  color: #4ade80; /* pastellivioletti korostus */
+  color: #80c783; /* pastellivioletti korostus */
   margin-bottom: 20px;
 }
 .roleicon {
@@ -44,13 +44,13 @@ body {
   /* margin-bottom: 10px; */
   /* padding: 10px; */
   font-size: 2rem;
-  color: #3ac46d;
+  color: #80c783;
   margin-right: 10px;
 }
 
 .databaseicon-img {
   font-size: 50px;
-  color: #4ade80; /* pastellivioletti korostus */
+  color: #80c783; /* pastellivioletti korostus */
   margin-bottom: 20px;
   width: 10px;
 }
@@ -70,7 +70,7 @@ body {
 
 .role-tag {
   display: inline-block;
-  background-color: #4ade80; /* pastellivihreä */
+  background-color: #80c783; /* pastellivihreä */
   color: #1e1e2f;
   padding: 5px 12px;
   border-radius: 12px;
@@ -152,7 +152,7 @@ body {
   border-radius: 50%;
   margin-bottom: 1.5rem;
 
-  border: 4px solid #86c88a; /* vihreä yhteys kortteihin */
+  border: 4px solid #80c783; /* vihreä yhteys kortteihin */
 }
 .profile-img {
   animation: softZoom 0.8s ease-out 0.2s forwards;
@@ -287,7 +287,7 @@ body {
   display: grid;
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  border: 2px solid #3ac46d;
+  border: 2px solid #80c783;
   border-radius: 14px;
   background: #fff;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
@@ -318,7 +318,7 @@ body {
 
 .rolecontent {
   padding: 1.5rem;
-  border-top: 1px solid #3ac46d;
+  border-top: 1px solid #80c783;
   display: none;
   font-size: 0.95rem;
   line-height: 1.6;
@@ -413,7 +413,7 @@ body {
 
 /* Rolecard tyylit (päivitetty) */
 .rolecard {
-  border: 2px solid #3ac46d;
+  border: 2px solid #80c783;
   border-radius: 14px;
   background: #fff;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
@@ -445,7 +445,7 @@ body {
 
 .rolecontent {
   padding: 1.5rem;
-  border-top: 1px solid #3ac46d;
+  border-top: 1px solid #80c783;
   display: none;
   font-size: 0.95rem;
   line-height: 1.6;
@@ -514,7 +514,7 @@ h1 {
 .circle-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
-  border-color: #3ac46d;
+  border-color: #80c783;
 }
 
 .top-row {
@@ -540,7 +540,7 @@ h1 {
 
 .box-header i:first-child {
   font-size: 2rem;
-  color: #3498db;
+  color: #80c783;
   margin-right: 15px;
 }
 
@@ -554,7 +554,7 @@ h1 {
 
 .arrow {
   font-size: 1.2rem;
-  color: #3ac46d;
+  color: #80c783;
   transition: transform 0.3s ease;
 }
 
@@ -577,7 +577,7 @@ h1 {
   max-height: none;
   opacity: 1;
   margin-top: 20px;
-  border-left-color: #3ac46d;
+  border-left-color: #80c783;
 }
 
 .box-content p {
@@ -600,7 +600,7 @@ h1 {
 
 .box-content li:before {
   content: '•';
-  color: #3ac46d;
+  color: #80c783;
   font-weight: bold;
   position: absolute;
   left: -10px;
@@ -682,7 +682,7 @@ h1 {
 .design-arrow {
   font-size: 2rem;
   font-weight: bold;
-  color: #3ac46d;
+  color: #80c783;
 }
 
 /* === IMAGE MODAL === */
@@ -739,7 +739,7 @@ h1 {
 .designarrow {
   font-size: 2rem;
   font-weight: bold;
-  color: #3ac46d;
+  color: #80c783;
 }
 
 /* === 3 KUVAA VIEREKKÄIN === */
@@ -779,7 +779,7 @@ h1 {
 .designarrow {
   font-size: 2rem;
   font-weight: bold;
-  color: #3ac46d;
+  color: #80c783;
   /* margin: 0px; */
 }
 
@@ -1007,4 +1007,17 @@ h1 {
 
 .project-link:hover {
   color: #1f4d36;
+}
+
+/* viiva lopussa */
+.simple-footer {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.footer-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000000;
 }

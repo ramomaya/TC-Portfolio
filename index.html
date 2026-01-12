@@ -140,8 +140,8 @@
 
   <div class="grid-container">
     <!-- Ylärivin kaksi laatikkoa -->
-    <div class="circle-box top-row scroll-animate" onclick="toggleContent('figma')">
-      <div class="box-header">
+    <div class="circle-box top-row scroll-animate">
+      <div class="box-header" onclick="toggleContent('figma')">
         <div class="roleicon">🖌️</div>
         <h2>Figma Suunnittelu</h2>
         <i class="fas fa-chevron-down arrow" id="arrow-figma"></i>
@@ -273,8 +273,8 @@
       </div>
     </div>
 
-    <div class="circle-box top-row scroll-animate" onclick="toggleContent('frontend')">
-      <div class="box-header">
+    <div class="circle-box top-row scroll-animate">
+      <div class="box-header" onclick="toggleContent('frontend')">
         <div class="roleicon">🎨</div>
         <h2>Frontend Kehittäjä</h2>
         <i class="fas fa-chevron-down arrow" id="arrow-frontend"></i>
@@ -438,8 +438,8 @@
     </div>
 
     <!-- Alarivin kaksi laatikkoa -->
-    <div class="circle-box bottom-row scroll-animate" onclick="toggleContent('database')">
-      <div class="box-header">
+    <div class="circle-box bottom-row scroll-animate">
+      <div class="box-header" onclick="toggleContent('database')">
         <div class="roleicon">🗄️</div>
         <h2>Tietokanta Suunnittelu</h2>
         <i class="fas fa-chevron-down arrow" id="arrow-database"></i>
@@ -580,8 +580,8 @@
       </div>
     </div>
 
-    <div class="circle-box bottom-row scroll-animate" onclick="toggleContent('tester')">
-      <div class="box-header">
+    <div class="circle-box bottom-row scroll-animate">
+      <div class="box-header" onclick="toggleContent('tester')">
         <div class="roleicon">🧪</div>
         <h2>Testaaja</h2>
         <i class="fas fa-chevron-down arrow" id="arrow-tester"></i>
@@ -898,10 +898,13 @@
     </div>
   </section>
 
+  <!-- viiva lopussa-->
+  <footer class="simple-footer">
+    <p class="footer-name">© 2025 Maya Ramo</p>
+  </footer>
 
-  </div>
-  </div>
 
+  <!-- kuvan isommaksi -->
   <div class="image-modal" id="imageModal">
     <img id="modalImage" alt="modalImage">
   </div>
@@ -943,7 +946,6 @@
 
     document.getElementById('imageModal').addEventListener('click', () => {
       document.getElementById('imageModal').style.display = 'none';
-      toggleContent('figma');
     });
 
     // animaatio efektejä kun protfolio lataa eka kertaa
