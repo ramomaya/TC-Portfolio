@@ -48,6 +48,13 @@ body {
   margin-right: 10px;
 }
 
+.databaseicon-img {
+  font-size: 50px;
+  color: #4ade80; /* pastellivioletti korostus */
+  margin-bottom: 20px;
+  width: 10px;
+}
+
 .role-title {
   font-size: 22px;
   font-weight: bold;
@@ -96,216 +103,174 @@ body {
   margin-bottom: 1rem;
 }
 
-/* .about-card {
+.profile-header {
+  min-height: 65vh;
   display: flex;
   align-items: center;
-  text-align: center;
-  gap: 1.5rem;
-  margin-right: 10px;
-  background-color: #b6b6b5;
-  padding: 1.5rem;
-  border-radius: 16px;
-  border-color: rgb(255, 255, 255);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
-  color: #f1ece4;
-} */
-
-/* .about-image img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.about-text .name {
-  margin: 0;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.about-text .study {
-  margin: 0.3rem 0;
-  font-size: 1rem;
-}
-
-.about-text .specialization {
-  margin: 0;
-  font-size: 0.95rem;
-} */
-
-/* .about-hero {
-  min-height: 90vh;
-  width: 1000px;
-  background-image: url('images/koodikuva.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-
-  display: flex;
-  justify-content: end;
-  text-align: center;
-  border-radius: 20px;
-  align-items: center;
-} */
-
-/* .about-hero {
-  min-height: 60vh;
-  background-image: url('images/koodikuva.png');
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
   justify-content: center;
-  align-items: center;
 
-  border-radius: 24px;
-  margin: 2rem;
-  position: relative;
-  overflow: hidden;
-} */
-.about-hero {
-  min-height: 60vh;
-  background-image: url('images/koodikuva.png');
-  background-size: cover;
-  background-position: center;
-  /* overflow: hidden; */
-
-  display: flex;
-  justify-content: end;
-  /* align-items: center; */
-
-  border-radius: 24px;
-  margin: 2rem;
+  padding: 4rem 6rem;
+  /* background-color: #f7f4ef; sama vaalea sävy kuin muualla */
+  gap: 4rem;
 }
 
-/* .about-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-
-  background-image: url('images/koodikuva.png');
-  background-size: cover;
-  background-position: center;
-
-  filter: blur(4px);
-  transform: scale(1.1);
-  z-index: 1;
-} */
-
-/* .about-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  filter: blur(6px);
-  background-color: rgba(0, 0, 0, 0.25);
-  background-image: url('images/koodikuva.png');
-  background-size: cover;
-  background-position: center;
-} */
-.about-card {
-  /* background: rgba(128, 199, 131, 0.85); */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  padding: 2.5rem;
-  border-radius: 22px;
-  width: 320px;
-  text-align: center;
-
-  box-shadow: 0 12px 30px rgba(74, 222, 128, 100);
-  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
-  color: #f1ece4;
+.profile-left {
+  max-width: 420px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
-/* .about-card {
-  position: relative;
-  z-index: 2;
-} */
-/* .about-card {
-  position: relative;
-  z-index: 1;
+.profile-right {
+  flex: 1;
+  min-height: 300px;
+}
 
-  background: #80c783;
-  color: #000;
+.profile-header {
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  opacity: 0;
+}
 
-  padding: 2.5rem;
-  border-radius: 20px;
-  width: 320px;
-  text-align: center;
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-} */
-
-/* Kortti taustakuvan PÄÄLLÄ */
-/* .about-card {
-  background-color: rgba(245, 239, 230, 0.95);
-  padding: 2.5rem 3rem;
-  border-radius: 24px;
-  text-align: center;
-
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
-} */
-
-/* NELIÖ kuva */
-/* .profile-img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 20px;
-  padding: 10px;
-  margin-bottom: 1rem;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  border-color: #4ade80;
-  border-style: solid;
-} */
-
+/* Profiilikuva */
 .profile-img {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 16px;
-  border: 4px solid rgba();
-  margin-bottom: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+
+  border: 4px solid #86c88a; /* vihreä yhteys kortteihin */
+}
+.profile-img {
+  animation: softZoom 0.8s ease-out 0.2s forwards;
+  transform: scale(0.95);
+  opacity: 0;
 }
 
-/* Iconit */
+@keyframes softZoom {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.about-name,
+.study,
+.specialization,
+.social-icons {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.about-name {
+  animation-delay: 0.3s;
+}
+.study {
+  animation-delay: 0.4s;
+}
+.specialization {
+  animation-delay: 0.5s;
+}
+.social-icons {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.social-icons img {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: translateY(-2px) scale(1.05);
+  opacity: 0.85;
+}
+
+/* Tekstit */
+.about-name {
+  font-size: 2.2rem;
+  margin-bottom: 0.4rem;
+  color: #1f2933;
+}
+
+.study {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+  color: #374151;
+}
+
+.specialization {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 1.4rem;
+  max-width: 360px;
+}
+
+/* Sosiaali-ikonit */
 .social-icons {
   display: flex;
-  justify-content: center;
   gap: 1.2rem;
-  margin-top: 1rem;
+  padding-left: 35px;
 }
 
 .social-icons img {
   width: 26px;
   height: 26px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.taustakuva {
-  width: 1100px;
-  height: 800px;
-  border-radius: 10px;
-  /* text-align: center; */
-  align-items: center;
+.social-icons img:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
 }
 
-.about-name {
-  font-size: 1.6rem;
-  margin-bottom: 0.3rem;
+.reko-slider {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  height: 320px;
 }
 
-.study {
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
+.reko-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-view-box: inherit; */
+  /* margin: auto; */
+  /* padding: 0.5rem; */
+  /* background: #f1ece4; */
+  /* border-radius: 16px; */
+
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.specialization {
-  font-size: 0.95rem;
-  opacity: 0.9;
+.reko-slide.active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .roles {
@@ -407,6 +372,16 @@ body {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* LAAJENNETUT TIEDOT (alaosa 2x2 grid) */
@@ -780,4 +755,188 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
   color: #3ac46d;
+}
+
+/* === 3 KUVAA VIEREKKÄIN === */
+.designcomparison.three-images {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+  flex-wrap: nowrap;
+}
+
+.designcomparison.three-images figure {
+  text-align: center;
+}
+
+/* KUVAT */
+.designcomparison.three-images img {
+  width: 65px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: zoom-in;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease;
+}
+
+.designcomparison.three-images img:hover {
+  transform: scale(1.05);
+}
+
+/* TEKSTIT */
+.designcomparison.three-images figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+.designarrow {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3ac46d;
+  /* margin: 0px; */
+}
+
+/* muu tekinen osaaminen tyylit */
+.extra-skills-title {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  color: #1f2933;
+}
+
+.extra-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.extra-skill-card {
+  background: #e9f6ec;
+  border-radius: 18px;
+  padding: 1.6rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.extra-skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.extra-skill-card .icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.extra-skill-card h4 {
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  color: #14532d;
+}
+
+.extra-skill-card p {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.45;
+}
+
+.skill-image {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  margin: 0.8rem 0 9rem;
+
+  opacity: 0.9;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.08));
+}
+
+.extra-skill-card img {
+  width: 140px;
+  border-radius: 12px;
+  cursor: zoom-in;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease;
+
+  /* LISÄÄ NÄMÄ KESKITTÄMISEEN */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.extra-skill-card img:hover {
+  transform: scale(1.05);
+}
+
+.extra-skill-card nuoli {
+  font-size: 1rem;
+  font-weight: bold;
+  /* color: #3ac46d; */
+}
+
+.extra-skill-card figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Reflektio-osio tyylit */
+.reflection-section {
+  background-color: #f7f4ef;
+  padding: 5rem 1.5rem;
+}
+
+.reflection-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+/* Vasen puoli */
+.reflection-intro h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #1f2933;
+}
+
+.reflection-lead {
+  font-size: 1.05rem;
+  color: #374151;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.reflection-image {
+  max-width: 260px;
+  opacity: 0.9;
+}
+
+/* Oikea puoli */
+.reflection-block {
+  border-left: 3px solid #86c88a;
+  padding-left: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.reflection-block h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  color: #1f2933;
+}
+
+.reflection-block p {
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Yhteenveto */
+.reflection-summary {
+  margin-top: 3rem;
+  padding: 1.2rem 1.5rem;
+  background-color: rgba(134, 200, 138, 0.15);
+  border-radius: 14px;
+  color: #1f2933;
+  font-weight: 500;
 }

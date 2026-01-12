@@ -19,70 +19,54 @@
 </head>
 
 <body>
-  <!-- <h1>Role 1: Figma / UI Design</h1>
-  <h2>for Portfolio</h2>
-  <h3>User Interface Design</h3> -->
-  <!-- <img src="images/ui.png" alt="Käyttöliittymän näkymä"> -->
-  <!-- <h3>Information:</h3>
-
-  <div class="Information">
-    <p>Name: Maya Ramo</p>
-    <p>Study: Business Information Technology</p>
-    <p>Specialized: User Interface Design and Software Development</p>
-
-    <div class="image">
-      <img class="kuva" src="images/maya.jpeg" alt="mayakuva">
-    </div>
-
-  </div> -->
-
-  <!-- <h3 class="section-title">About Me</h3>
-
-  <div class="about-card">
-    <div class="about-image">
-      <img src="images/maya.jpeg" alt="Photo of Maya Ramo">
-    </div>
-
-    <div class="about-text">
-      <h4 class="name">Maya Ramo</h4>
-      <p class="study">Business Information Technology student</p>
-      <p class="specialization">
-        Specialized in UI Design and Software Development
-      </p>
-    </div>
-  </div> -->
-
-  <section class="about-hero">
-    <div class="about-card">
+  <section class="profile-header">
+    <div class="profile-left">
       <img class="profile-img" src="images/maya.jpeg" alt="Photo of Maya Ramo">
 
       <h2 class="about-name">Maya Ramo</h2>
       <p class="study">Business Information Technology</p>
-      <p class="specialization">
-        UI Design & Software Development
-      </p>
+      <p class="specialization">UI/UX Design & Software Development</p>
 
       <div class="social-icons">
-        <a href="https://github.com/USERNAME" target="_blank">
-          <img src="icons/github.svg" alt="GitHub">
+        <a href="https://github.com/ramomaya" target="_blank">
+          <img src="images/github kuvake.png" alt="GitHub">
         </a>
         <a href="https://linkedin.com/in/USERNAME" target="_blank">
-          <img src="icons/linkedin.svg" alt="LinkedIn">
+          <img src="images/linkedin kuvake.png" alt="LinkedIn">
         </a>
       </div>
+    </div>
+
+    <div class="profile-right">
+      <!-- tänne tulee myöhemmin REKO-kuvat -->
+      <div class="reko-slider">
+        <img src="images/Etusivu.jpg" class="reko-slide active" alt="REKO etusivu">
+        <img src="images/IlmoitusSivuDesktopVersio.png" class="reko-slide" alt="REKO ilmoitusivu">
+        <img src="images/ostoskori.png" class="reko-slide" alt="REKO Ostoskori sivu">
+        <img src="images/kirjaudusisään sivu.png" class="reko-slide" alt="REKO kirjaudu sisään sivu">
+        <img src="images/rekisteröidysivu.png" class="reko-slide" alt="REKO rekisteröidy sivu">
+      </div>
+
     </div>
   </section>
 
 
-  <div class="tc-project-box">
-    <h1 class="otsikko">During the TC project, I worked in multiple roles covering design, development, and testing.
+
+
+
+
+
+  <div class="tc-project-box scroll-animate">
+    <h1 class="otsikko">TC-projektin aikana työskentelin useissa eri tehtävissä, jotka kattoivat suunnittelun,
+      kehityksen ja testauksen.
     </h1>
 
     <div class="role-card" onclick="toggleContent('figma')">
       <div class="role-icon">🖌️</div>
       <div class="role-title">Figma Suunnittelu</div>
       <div class="role-description">
-        Responsible for designing the UI/UX, creating prototypes, and preparing assets for frontend implementation
+        Vastaa UI/UX suunnittelusta, prototyyppien luomisesta ja resurssien valmistelusta
+        frontend-toteutusta varten
       </div>
 
     </div>
@@ -91,16 +75,17 @@
       <div class="role-icon">🎨</div>
       <div class="role-title">Frontend Kehittäjä</div>
       <div class="role-description">
-        Built the user interface based on Figma designs and implemented core views and user interactions
+        Rakensin käyttöliittymän Figma-suunnittelun pohjalta ja toteutin keskeiset näkymät ja käyttäjävuorovaikutukset
       </div>
       <!-- <div class="role-tag">Frontend</div> -->
     </div>
 
     <div class="role-card" onclick="toggleContent('database')">
       <div class="role-icon">🗄️</div>
+      <!-- <img src="images/database_4125356.png" class="databaseicon" alt="database kuvake"> -->
       <div class="role-title">Tietokanta Suunnittelu</div>
       <div class="role-description">
-        Designed the database structure, relationships, and data flow to supports the application's functionality
+        Suunnitteli tietokannan rakenteen, suhteet ja tietovirran tukemaan sovelluksen toiminnallisuutta
       </div>
       <!-- <div class="role-tag">Frontend</div> -->
     </div>
@@ -109,35 +94,17 @@
       <div class="role-icon">🧪</div>
       <div class="role-title">Testaaja</div>
       <div class="role-description">
-        Tested core features, identified bugs, and ensured the application works as expected from a user’s perspective.
+        Testasin ydinominaisuuksia, tunnistin virheitä ja varmistin, että sovellus toimii käyttäjän näkökulmasta
+        odotetulla tavalla.
       </div>
       <!-- <div class="role-tag">Frontend</div> -->
     </div>
 
   </div>
 
-
-  <!-- <script>
-    function toggleRole(roleId) {
-      const content = document.getElementById(`content-${roleId}`);
-      const arrow = document.getElementById(`arrow-${roleId}`);
-
-      // Toggle sisällön näkyvyys
-      if (content.style.display === 'block' || content.classList.contains('open')) {
-        content.style.display = 'none';
-        content.classList.remove('open');
-        arrow.style.transform = 'rotate(0deg)';
-      } else {
-        content.style.display = 'block';
-        content.classList.add('open');
-        arrow.style.transform = 'rotate(180deg)';
-      }
-    }
-  </script> -->
-
   <div class="grid-container">
     <!-- Ylärivin kaksi laatikkoa -->
-    <div class="circle-box top-row" onclick="toggleContent('figma')">
+    <div class="circle-box top-row scroll-animate" onclick="toggleContent('figma')">
       <div class="box-header">
         <div class="roleicon">🖌️</div>
         <h2>Figma Suunnittelu</h2>
@@ -147,10 +114,11 @@
       <div class="box-content" id="content-figma">
         <div class="viiva"></div>
 
-        <p><strong>Lyhyt esittely:</strong> Vastasin käyttöliittymäsuunnittelusta Figmassa. Tavoitteena oli luoda selkeä
-          ja helppokäyttöinen näkymä, jossa käyttäjä voi selata ja hakea etusivulla tuoteryhmä mukaisesti. Samalla
-          tuottaja
-          voi kirjautua sisään ja lisätä omia tuotteitaan.
+        <p><strong>Lyhyt esittely:</strong> Vastasin REKO-sovelluksen käyttöliittymäsuunnittelusta Figmassa. Tavoitteena
+          oli luoda selkeä
+          ja helppokäyttöinen näkymä, jossa kaikki käyttäjät voivat selata ja hakea tuotteita etusivulla tuoteryhmittäin
+          ilman kirjautumista. Tuottajille suunnittelin kirjautumisen ja tuotteiden
+          hallinnan näkymät.
         </p>
         <div class="design-comparison">
           <figure>
@@ -162,14 +130,15 @@
 
           <figure>
             <img src="images/UudenversioFigma.png" alt="New version" class="zoomable">
-            <figcaption>Loppu versio</figcaption>
+            <figcaption>Uusi versio</figcaption>
           </figure>
         </div>
         <ul>
-          <li><strong>Miten tein käytännössä:</strong> Suunnittelin käyttöliittymän näkymiä ja käyttäjäpolkuja Figmassa.
-            Tein aluksi version rakenteesta ja toiminnoista, jonka pohjalta kehitimme projektin tarpeisiin sopivan uuden
-            version. Huomioin suunnittelussa myös frontend‑toteutuksen vaatimukset.
-
+          <li><strong>Miten tein käytännössä:</strong> Suunnittelin käyttöliittymän näkymiä ja käyttäjäpolkuja Figmassa
+            vaiheittain.
+            Aloitin yksinkertaisella rakenteella, jonka pohjalta kehitimme toiminnallisemman
+            ja visuaalisesti viimeistellyn version. Suunnittelussa huomioin koko ajan myös
+            frontend-toteutuksen vaatimukset, kuten komponenttirakenteen ja uudelleenkäytettävyyden.
             <div class="designcomparison">
               <figure>
                 <img src="images/vanhaEtusivu.png" alt="Old version" class="zoomable">
@@ -180,14 +149,15 @@
 
               <figure>
                 <img src="images/uusiEtusivu.png" alt="New version" class="zoomable">
-                <figcaption>Loppu Etusivu</figcaption>
+                <figcaption>Uusi Etusivu</figcaption>
               </figure>
             </div>
           </li>
-          <li><strong>Visuaalinen ajattelu:</strong> Vanhassa versiossa painopiste oli sisällön esittämisessä, kuten
-            käyttäjäpolun toiminnassa ja tuottajan näkymässä. Uudessa versiossa paransin kontrasteja ja typografiaa,
-            minkä ansiosta tärkeät toiminnallisuudet toimivat paremmin ja käyttöliittymä tuntuu selkeämmältä.
-
+          <li><strong>Visuaalinen ajattelu:</strong> Vanhassa versiossa painopiste oli toiminnallisuuksissa ja sisällön
+            määrässä.
+            Uudessa versiossa paransin kontrasteja, typografiaa ja elementtien välistä
+            rytmiä, jotta tärkeät toiminnot erottuvat paremmin ja käyttöliittymä tuntuu
+            selkeämmältä ja rauhallisemmalta.
             <div class="designcomparison">
               <figure>
                 <img src="images/vanhanappit.png" alt="Old version" class="zoomable">
@@ -198,10 +168,36 @@
 
               <figure>
                 <img src="images/uusinappit.png" alt="New version" class="zoomable">
-                <figcaption>Lopput nappit</figcaption>
+                <figcaption>Uudet nappit</figcaption>
               </figure>
             </div>
           </li>
+
+          <li><strong>Yhteistyö ja iterointi:</strong>
+            Käyttöliittymäsuunnittelu tehtiin tiiviissä yhteistyössä tiimin kanssa, eikä lopullinen ratkaisu syntynyt
+            heti. Projektin alkuvaiheessa vastasin koko REKO-sovelluksen desktop-version käyttöliittymäsuunnittelusta
+            Figmassa, ja tämä versio toimi pohjana sovelluksen rakenteelle ja visuaaliselle ilmeelle. Suunnitelmaa
+            kehitettiin projektin edetessä palautteen, keskustelujen ja käytännön testaamisen perusteella.
+
+            Iterointia tehtiin useaan otteeseen, esimerkiksi etusivun rakenteen, painikkeiden, värien ja typografian
+            osalta, jotta käyttöliittymä olisi mahdollisimman selkeä ja helppokäyttöinen eri käyttäjäryhmille. Projektin
+            myöhemmässä vaiheessa keskityin enemmän muihin rooleihin, kuten frontend-toteutukseen, mutta
+            Figma-suunnitelma säilyi tärkeänä viitepisteenä koko kehityksen ajan ja ohjasi käyttöliittymän toteutusta
+            loppuun asti.
+          </li>
+          <div class="designcomparison">
+            <figure>
+              <img src="images/ostoskori figmassa.png" alt="Old version" class="zoomable">
+              <figcaption> Ostoskori Figma</figcaption>
+            </figure>
+
+            <span class="designarrow">→</span>
+
+            <figure>
+              <img src="images/ostoskori.png" alt="New version" class="zoomable">
+              <figcaption>Ostoskori frontend</figcaption>
+            </figure>
+          </div>
           <li><strong>Mitä opin:</strong>
             <br>
             <ul class="mitaopin">
@@ -218,15 +214,15 @@
 
             <div class="designcomparison">
               <figure>
-                <img src="images/vanhavari.png" alt="Old version" class="zoomable">
-                <figcaption>Vanha väri</figcaption>
+                <img src="images/vanhaVäri logo.png" alt="Old version" class="zoomable">
+                <figcaption>Vanha logo</figcaption>
               </figure>
 
               <span class="designarrow">→</span>
 
               <figure>
-                <img src="images/uusivari.png" alt="New version" class="zoomable">
-                <figcaption>Loppu väri</figcaption>
+                <img src="images/uusiVäri logo.png" alt="New version" class="zoomable">
+                <figcaption>Uusi logo</figcaption>
               </figure>
             </div>
 
@@ -241,7 +237,7 @@
       </div>
     </div>
 
-    <div class="circle-box top-row" onclick="toggleContent('frontend')">
+    <div class="circle-box top-row scroll-animate" onclick="toggleContent('frontend')">
       <div class="box-header">
         <div class="roleicon">🎨</div>
         <h2>Frontend Kehittäjä</h2>
@@ -249,20 +245,164 @@
       </div>
       <div class="box-content" id="content-frontend">
         <div class="viiva"></div>
-        <p><strong>Lyhyt esittely:</strong> Rakentaa käyttöliittymän Figma-suunnitelmien pohjalta ja toteuttaa
-          keskeiset näkymät sekä käyttäjäinteraktiot.</p>
+        <p><strong>Lyhyt esittely:</strong> Vastasin REKO-sovelluksen frontend-toteutuksesta Angular-frameworkilla.
+          Tavoitteena oli toteuttaa Figma-suunnitelmat toimivaksi ja responsiiviseksi käyttöliittymäksi sekä rakentaa
+          selkeä komponenttipohjainen rakenne.</p>
+        <div class="design-comparison">
+          <figure>
+            <img src="images/IlmoitusSivuDesktopVersio.png" alt="Old version" class="zoomable">
+            <figcaption>Desktop versio</figcaption>
+          </figure>
+
+          <span class="design-arrow">→</span>
+
+          <figure>
+            <img src="images/IlmoitusSivuMobiiliVersio3.png" alt="New version" class="zoomable">
+            <figcaption>Mobiili versio</figcaption>
+          </figure>
+        </div>
         <ul>
-          <li><strong>Miten tein käytännössä:</strong> Muunsin Figma-suunnitelmat HTML/CSS/JS-koodiksi.</li>
-          <li><strong>Visuaalinen ajattelu:</strong> Huomioin responsiivisuuden ja saavutettavuuden jokaista
-            komponenttia suunnitellessa.</li>
-          <li><strong>Mitä opin:</strong> React-komponenttien tehokas uusiokäyttö ja tilanhallinta.</li>
-          <li><strong>Mitä tekisin nyt toisin:</strong> Enemmän yksikkötestejä komponenteille.</li>
+          <li><strong>Miten tein käytännössä:</strong>Toteutin käyttöliittymän Angularilla Figma-suunnitelmien pohjalta.
+            Rakensin näkymät komponenteista ja hyödynsin palveluita (services) datan käsittelyyn ja sovelluksen
+            logiikkaan. Alkuvaiheessa data oli kovakoodattua, jotta käyttöliittymän rakenne ja toiminnallisuudet
+            saatiin nopeasti testattua. Projektin loppuvaiheessa frontend yhdistettiin backendin REST APIin, jolloin
+            data haettiin pilvessä toimivasta tietokannasta.
+
+            Frontend-kehitykseen kuului käyttäjäinteraktioiden käsittely, reititys eri näkymien välillä sekä lomakkeiden
+            ja ostoskorin toiminnallisuuksien toteutus.
+
+
+          </li>
+          <div class="designcomparison">
+            <figure>
+              <img src="images/in-memeory-data-service.png" alt="Old version" class="zoomable">
+              <figcaption>Kovakoodattua data</figcaption>
+            </figure>
+
+            <span class="design-arrow">→</span>
+
+            <figure>
+              <img src="images/notification-serivce.png" alt="New version" class="zoomable">
+              <figcaption>Data backendistä</figcaption>
+            </figure>
+          </div>
+          <li><strong>Visuaalinen ajattelu:</strong> Kiinnitin huomiota siihen, että käyttöliittymä on selkeä ja
+            helppokäyttöinen eri laitteilla. Toteutin responsiivisen rakenteen ja varmistin, että tärkeät toiminnot ovat
+            helposti löydettävissä. Pyrin myös siihen, että käyttöliittymä vastaa mahdollisimman tarkasti
+            Figma-suunnitelmia ja tarjoaa sujuvan käyttäjäkokemuksen.</li>
+          <div class="designcomparison">
+            <figure>
+              <img src="images/vanhaKontrasti.png" alt="Old version" class="zoomable">
+              <figcaption>Vanhat kontrasti</figcaption>
+            </figure>
+
+            <span class="design-arrow">→</span>
+
+            <figure>
+              <img src="images/uusiKontrasti.png" alt="New version" class="zoomable">
+              <figcaption>Parempi kontrasti</figcaption>
+            </figure>
+          </div>
+
+          <li><strong>Tilanhallinta ja tekniset ratkaisut:</strong>Projektin alkuvaiheessa kokeilin tilanhallintaan
+            SignalStorea, koska sovelluksen idea oli laaja ja sisälsi useita toiminnallisuuksia. SignalStore toimii
+            hyvin monimutkaisemmissa sovelluksissa, joissa tarvitaan selkeää ja keskitettyä tilanhallintaa. Projektin
+            edetessä kuitenkin huomasimme, että sovellus ei lopulta kasvanut niin laajaksi kuin alun perin oli
+            suunniteltu.
+
+            Tämän vuoksi päätimme luopua SignalStoren käytöstä ja siirtyä yksinkertaisempaan ratkaisuun, jossa
+            ostoskorin tiedot tallennetaan localStorageen. Tämä teki toteutuksesta selkeämmän, helpommin ymmärrettävän
+            ja nopeamman ylläpitää. Ratkaisu vastasi paremmin sovelluksen todellisia tarpeita ja tuki hyvin projektin
+            aikataulua ja tavoitteita.
+          </li>
+          <div class="designcomparison">
+            <figure>
+              <img src="images/cartStore.png" alt="Old version" class="zoomable">
+              <figcaption>SignalStore</figcaption>
+            </figure>
+
+            <span class="design-arrow">→</span>
+
+            <figure>
+              <img src="images/ostoskoriService.png" alt="New version" class="zoomable">
+              <figcaption>LocalStorage</figcaption>
+            </figure>
+          </div>
+
+          <li><strong>Mitä opin:</strong>
+            <ul class="mitaopin">
+              <li>Opin projektin aikana arvioimaan paremmin, millainen tilanhallintaratkaisu sopii oikeasti projektin
+                laajuuteen.</li>
+              <li>Ymmärsin, että vaikka SignalStore on tehokas työkalu laajoihin ja monimutkaisiin sovelluksiin,
+                yksinkertaisempi ratkaisu voi olla parempi rajatummissa kokonaisuuksissa.</li>
+              <li>Opin tekemään teknisiä päätöksiä projektin edetessä ja muuttamaan alkuperäisiä ratkaisuja tarpeen
+                mukaan.</li>
+              <li>Käytännön työssä opin lisää Angularin komponenttirakenteesta ja siitä, miten palveluita hyödynnetään
+                frontendissä.</li>
+              <li>Opin käyttämään Angularin valmiita komponentteja, kuten lomakkeita ja vahvistusilmoituksia.
+                Vaikkakin niiden tyylien muokkaaminen Tailwind CSS:llä oli haasteita, opin ratkaisemaan nämä ongelmat ja
+                saamaan komponentit näyttämään halutunlaisilta.</li>
+              <li>Opin paremmin, miten frontend ja backend toimivat yhdessä oikeassa sovelluksessa.</li>
+              <li>Kehitin myös Tailwind CSS -taitojani, erityisesti responsiivisen suunnittelun osalta pienillä
+                näytöillä. Pienten ruutujen layout-haasteet opettivat minua olemaan tarkka tekstimuotoilussa, jotta
+                sisältö pysyy tiiviinä ja luettavana kaikilla näytönkooilla.
+              </li>
+              <li>Kehitin myös kykyä arvioida teknisiä ratkaisuja kriittisesti ja vaihtaa lähestymistapaa, jos
+                alkuperäinen ratkaisu ei vastannut projektin todellisia tarpeita.</li>
+            </ul>
+          </li>
+          <div class="designcomparison three-images">
+            <figure>
+              <img src="images/Ilmoitus-has-tuotteet.png" alt="Database" class="zoomable">
+              <figcaption>Tietokanta (pilvessä)</figcaption>
+
+            </figure>
+
+            <span class="designarrow">→</span>
+            <figure>
+              <img src="images/YhdenIlmoitusTiedot.png" alt="Backend" class="zoomable">
+              <figcaption>Backend (API)</figcaption>
+            </figure>
+
+            <span class="designarrow">→</span>
+            <figure>
+              <img src="images/types2.png" alt="Frontend" class="zoomable">
+              <figcaption>Frontend (Types)</figcaption>
+            </figure>
+          </div>
+
+          <div class="designcomparison three-images">
+            <figure>
+              <img src="images/mapataan tuotteet.png" alt="Database" class="zoomable">
+              <figcaption>Ostoskori (service)</figcaption>
+
+            </figure>
+
+            <span class="designarrow">→</span>
+            <figure>
+              <img src="images/ostoskoriTS.png" alt="Backend" class="zoomable">
+              <figcaption>Ostoskori (TS)</figcaption>
+            </figure>
+
+            <span class="designarrow">→</span>
+            <figure>
+              <img src="images/ostoskori.png" alt="Frontend" class="zoomable">
+              <figcaption>Frontend (Angular)</figcaption>
+            </figure>
+          </div>
+
+          <li><strong>Mitä tekisin nyt toisin:</strong> Jos aloittaisin projektin nyt uudelleen, miettisin
+            tilanhallintaratkaisun tarkemmin jo alkuvaiheessa suhteessa siihen, kuinka laajaksi sovellus on oikeasti
+            tarkoitus rakentaa. Valitsisin aluksi mahdollisimman yksinkertaisen ratkaisun ja siirtyisin
+            monimutkaisempaan tilanhallintaan vasta siinä vaiheessa, kun sovelluksen tarpeet sitä aidosti vaatisivat.
+            Samalla panostaisin enemmän arkkitehtuurin suunnitteluun ja dokumentointiin heti projektin alussa,
+            erityisesti tilanhallinnan osalta.</li>
         </ul>
       </div>
     </div>
 
     <!-- Alarivin kaksi laatikkoa -->
-    <div class="circle-box bottom-row" onclick="toggleContent('database')">
+    <div class="circle-box bottom-row scroll-animate" onclick="toggleContent('database')">
       <div class="box-header">
         <div class="roleicon">🗄️</div>
         <h2>Tietokanta Suunnittelu</h2>
@@ -270,19 +410,141 @@
       </div>
       <div class="box-content" id="content-database">
         <div class="viiva"></div>
-        <p><strong>Lyhyt esittely:</strong> Suunnittelee tietokannan rakenteen, taulujen väliset relaatiot ja datan
-          virtauksen, jotka tukevat sovelluksen toiminnallisuuksia.</p>
+        <p><strong>Lyhyt esittely:</strong> Vastasin REKO-sovelluksen tietokannan suunnittelusta ja toteutuksesta
+          MySQL-tietokannalla yhdessä tiimin kanssa. Tietokanta suunniteltiin tukemaan sovelluksen keskeisiä
+          toiminnallisuuksia, kuten käyttäjiä, tuottajia, tuotteita, ilmoituksia, tilauksia ja jakelureittejä.
+          Sovelluksen idea oli melko monimutkainen, minkä vuoksi tietokannan rakenteen suunnittelu vei aikaa.
+          Ennen toimivan ratkaisun löytymistä hyödynsimme datacase-tapausta, jossa hahmottelimme tauluja ja niiden
+          suhteita Excelissä.
+          Tavoitteena oli luoda selkeä ja looginen rakenne, joka toimii sujuvasti yhdessä backendin API-ratkaisun kanssa
+          ja mahdollistaa tiedon käytön frontend-sovelluksessa.</p>
+
+        <div class="designcomparison">
+          <figure>
+            <img src="images/TietokanatVanhaVersio.png" alt="Old version" class="zoomable">
+            <figcaption>Vanha versio</figcaption>
+          </figure>
+
+          <span class="design-arrow">→</span>
+
+          <figure>
+            <img src="images/tietokanta EER-malli.png" alt="New version" class="zoomable">
+            <figcaption>Uusi versio</figcaption>
+          </figure>
+        </div>
         <ul>
-          <li><strong>Miten tein käytännössä:</strong> Luin ER-kaavioita ja normalisoin tietokantarakenteita.</li>
-          <li><strong>Visuaalinen ajattelu:</strong> Keskityin siihen, miten data liikkuu ja miten se voidaan hakea
-            tehokkaasti.</li>
-          <li><strong>Mitä opin:</strong> Indeksien tärkeys suorituskyvyn kannalta.</li>
-          <li><strong>Mitä tekisin nyt toisin:</strong> Lisäisin enemmän dokumentaatiota kuhunkin tauluun.</li>
+          <li><strong>Miten tein käytännössä:</strong>Osallistuin aktiivisesti tietokannan rakenteen suunnitteluun ja
+            MySQL-tietokannan toteutukseen yhdessä tiimin kanssa. Suunnittelimme ja rakensimme keskeiset taulut, kuten
+            Asiakas, Tuottaja, Tuotteet, Ilmoitukset, Tilaus ja Reitit, sekä näiden väliset liitostaulut.
+
+            Määrittelin taulujen väliset suhteet vierasavainten avulla ja huolehdin siitä, että tietokanta tukee
+            sovelluksen käyttötapauksia, kuten tilausten käsittelyä ja tuotteiden liittämistä ilmoituksiin. Rakenteessa
+            huomioitiin moni–moneen-suhteet, tietojen eheys ja käytännön toimivuus backend-rajapintojen kautta.
+
+            Lisäksi määrittelin uniikit kentät, kuten sähköpostit ja käyttäjätunnukset, sekä hyödynsin ENUM-arvoja
+            esimerkiksi tilausten tilojen hallinnassa.</li>
+          <div class="designcomparison">
+            <figure>
+              <img src="images/tilaustaulukkoEER.png" alt="Old version" class="zoomable">
+              <figcaption>Tilaus taulu</figcaption>
+            </figure>
+
+            <span class="design-arrow">→</span>
+
+            <figure>
+              <img src="images/TilausTaulukko1.png" alt="New version" class="zoomable">
+              <figcaption>tilaustaulu skriptin osa</figcaption>
+            </figure>
+          </div>
+          <li><strong>Tietokantarakenne ja suhteet:</strong> Tietokanta rakennettiin relaatiomallin pohjalta, jossa
+            keskeiset entiteetit, kuten tuottajat, asiakkaat, tuotteet, ilmoitukset, tilaukset ja jakelureitit, on
+            selkeästi eroteltu ja yhdistetty loogisilla suhteilla. Tuottajat voivat luoda ilmoituksia ja tuotteita,
+            asiakkaat tehdä tilauksia, ja tilaukset viittaavat sekä ilmoituksiin että reitteihin viiteavainten avulla.
+
+            Yksi suurimmista haasteista oli erottaa tuotteet tilanteessa, jossa eri tuottajilla voi olla samanlaisia
+            tuotteita. Ratkaisimme tämän käyttämällä Tuotteet-taulussa yhdistettyä pääavainta, jossa TuoteID ja
+            TuottajaID muodostavat yhdessä primary keyn. Tämän avulla jokainen tuote voidaan yksiselitteisesti liittää
+            oikeaan tuottajaan.
+
+            Monimutkaisempia suhteita mallinnettiin liitostaulujen avulla, kuten tuotteiden kuuluminen ilmoituksiin ja
+            tilauksiin. Tämä rakenne mahdollisti joustavan tiedonhallinnan ja vastasi sovelluksen monipuolisiin
+            toiminnallisiin tarpeisiin.</li>
+          <div class="designcomparison">
+            <figure>
+              <img src="images/tuotteetTaulukko.png" alt="Old version" class="zoomable">
+              <figcaption>Tuotteet taulu</figcaption>
+            </figure>
+
+            <span class="design-arrow">→</span>
+
+            <figure>
+              <img src="images/liitokset-taulut.png" alt="New version" class="zoomable">
+              <figcaption>Liitostaulut</figcaption>
+            </figure>
+          </div>
+
+          <li><strong>Yhteistyö ja iterointi:</strong> Tietokannan suunnittelu tehtiin tiiviissä yhteistyössä tiimin
+            kanssa, eikä toimiva ratkaisu syntynyt heti. Sovelluksen idea oli alusta asti laaja ja monimutkainen, minkä
+            vuoksi tietokantarakenteen suunnittelu vei paljon aikaa. Ennen lopullisen rakenteen löytymistä
+            suunnittelimme tietokantaa useaan otteeseen ja hyödynsimme datacase-tapausta, jossa hahmottelimme taulut ja
+            niiden suhteet ensin Excelissä. Tämän avulla pystyimme testaamaan eri ratkaisuja ja ymmärtämään
+            kokonaisuutta paremmin ennen MySQL-tietokannan toteutusta. Tietokantakaaviota ja rakennetta muokattiin
+            projektin aikana useita kertoja, myös vielä viimeisen version jälkeen, jotta tietokanta vastaisi
+            mahdollisimman hyvin sovelluksen toiminnallisuuksia ja alkuperäistä ideaa.</li>
+
+          <div class="designcomparison">
+            <figure>
+              <img src="images/datacasetaulut.png" alt="Old version" class="zoomable">
+              <figcaption>Excel-datacase</figcaption>
+            </figure>
+
+            <span class="design-arrow">→</span>
+
+            <figure>
+              <img src="images/datacase taulut.png" alt="New version" class="zoomable">
+              <figcaption>Toteuttu versio</figcaption>
+            </figure>
+          </div>
+          <li><strong>Mitä opin:</strong>
+            <ul class="mitaopin">
+              <li>Opin, kuinka tärkeää on suunnitella tietokanta koko sovelluksen näkökulmasta eikä vain yksittäisten
+                toiminnallisuuksien perusteella.</li>
+              <li>Ymmärsin, että monimutkaisissa projekteissa tietokantarakenne harvoin on valmis ensimmäisellä
+                kerralla, vaan se kehittyy ja tarkentuu yhteistyön, testauksen ja käytännön toteutuksen kautta.</li>
+              <li>Opin suunnittelemaan relaatiotietokannan, joka tukee monimutkaisempaa sovelluslogiikkaa ja vastaa
+                sovelluksen todellisia tarpeita.</li>
+              <li>Kehitin osaamistani viiteavainten, liitostaulujen ja indeksien käytössä sekä ymmärsin paremmin niiden
+                merkityksen tietojen eheyden ja toimivuuden kannalta.</li>
+              <li>Opin, miten tietokantarakenne vaikuttaa suoraan backendin ja frontendin toimintaan.</li>
+              <li>Opin hyödyntämään datacase-tapausta monimutkaisessa sovelluksessa, jossa taulut ja niiden suhteet
+                mallinnettiin ensin Excelissä. Tämä auttoi hahmottamaan kokonaisuuden, tunnistamaan ongelmakohdat
+                ajoissa ja löytämään toimivan ratkaisun ennen varsinaista tietokannan toteutusta.
+              </li>
+              <li>Kehitin myös kykyäni työskennellä tiimissä teknisten ratkaisujen parissa ja perustella
+                tietokantasuunnitteluun liittyviä päätöksiä.</li>
+            </ul>
+          </li>
+
+          <div class="designcomparison">
+            <figure>
+              <img src="images/Iteratiivinen oppimisprosessi.png" alt="Old version" class="zoomable">
+              <figcaption>Iteratiivinen oppimisprosessi</figcaption>
+            </figure>
+
+            <span class="design-arrow">→</span>
+
+            <figure>
+              <img src="images/Oivallukset.png" alt="New version" class="zoomable">
+              <figcaption>Oivallukset ja taidot</figcaption>
+            </figure>
+          </div>
+          <li><strong>Mitä tekisin nyt toisin:</strong> Jos aloittaisin projektin uudelleen, panostaisin vielä enemmän
+            tietokannan rakenteen dokumentointiin heti alkuvaiheessa.</li>
         </ul>
       </div>
     </div>
 
-    <div class="circle-box bottom-row" onclick="toggleContent('tester')">
+    <div class="circle-box bottom-row scroll-animate" onclick="toggleContent('tester')">
       <div class="box-header">
         <div class="roleicon">🧪</div>
         <h2>Testaaja</h2>
@@ -290,18 +552,305 @@
       </div>
       <div class="box-content" id="content-tester">
         <div class="viiva"></div>
-        <p><strong>Lyhyt esittely:</strong> Testaa keskeisiä ominaisuuksia, tunnistaa bugeja ja varmistaa, että
-          sovellus toimii odotetulla tavalla käyttäjän näkökulmasta.</p>
+        <p><strong>Lyhyt esittely:</strong>REKO-sovelluksen testaus jäi osittain rajalliseksi projektin aikataulun ja
+          resurssien vuoksi. Projektin alkuvaiheessa testaukselle ei ollut selkeää vastuuhenkilöä, minkä vuoksi
+          systemaattinen testaus jäi vähäiseksi. Projektin loppuvaiheessa otin testausvastuun vastaan muiden roolieni,
+          kuten frontend-kehityksen ja Figma-suunnittelun, ohella. Testausta toteutettiin yhteistyössä PO-roolissa
+          toimineen tiimin jäsenen kanssa, ja painopiste oli erityisesti frontendin toimivuuden varmistamisessa.</p>
+
+        <div class="designcomparison">
+          <figure>
+            <img src="images/testauskokonaiskuva.png" alt="Old version" class="zoomable">
+            <figcaption>Testauksen kokonaiskuva</figcaption>
+          </figure>
+
+          <span class="design-arrow">→</span>
+
+          <figure>
+            <img src="images/Testauksen vastuut projektissa1.png" alt="New version" class="zoomable">
+            <figcaption>Testaus projektissa</figcaption>
+          </figure>
+        </div>
         <ul>
-          <li><strong>Miten tein käytännössä:</strong> Suoritin manuaalisia ja automatisoituja testejä eri
-            käyttötapauksille.</li>
-          <li><strong>Visuaalinen ajattelu:</strong> Yritin nähdä sovelluksen "rikkinäisin silmin" löytääkseni
-            mahdollisia ongelmia.</li>
-          <li><strong>Mitä opin:</strong> Testauskattavuuden tärkeys ja bugiraportoinnin parhaat käytännöt.</li>
-          <li><strong>Mitä tekisin nyt toisin:</strong> Automatisoisin enemmän toistuvia testitapauksia.</li>
+          <li><strong>Miten tein käytännössä:</strong> Käytännössä osallistuin sovelluksen testaamiseen yhdessä
+            PO-roolissa toimineen tiimiläisen kanssa. Toteutimme frontend-puolen testauksia, jotka keskittyivät
+            erityisesti saavutettavuuteen, käytettävyyteen ja yhteensopivuuteen eri selaimilla ja laitteilla. Testausta
+            tehtiin koko sovelluksen tasolla käyttäjän näkökulmasta.
+
+            Lisäksi toteutin Cypressillä end-to-end-testauksen, jossa testattiin neljä keskeistä käyttäjäpolkua
+            REKO-sovelluksessa. Näissä testattiin muun muassa ilmoitusten selaamista, tuotteiden valintaa ja ostoskorin
+            toimintaa. Yksikkötestauksen osalta toteutin yhden Vitestillä tehdyn testin, jossa haettiin ilmoituksia
+            fake-backendista ja varmistettiin datan oikea käsittely frontendissä.</li>
+
+          <div class="designcomparison">
+            <figure>
+              <img src="images/cypress koodikuva.png" alt="Old version" class="zoomable">
+              <figcaption>Cypress E2E -testaus</figcaption>
+            </figure>
+
+            <span class="design-arrow">→</span>
+
+            <figure>
+              <img src="images/wave työkalu testaus.png" alt="New version" class="zoomable">
+              <figcaption>Wave työkalu</figcaption>
+            </figure>
+          </div>
+          <li><strong>Testausmenetelmät ja työkalut:</strong>Testauksessa hyödynnettiin useita
+            eri menetelmiä ja
+            työkaluja:
+            <ul class="mitaopin">
+              <li>Manuaalinen testaus käyttäjän näkökulmasta</li>
+              <li>Saavutettavuus- ja käytettävyystestaus selaintyökaluilla</li>
+              <li>Yhteensopivuustestaus eri selaimilla</li>
+              <li>End-to-end-testaus Cypressillä (4 käyttäjäpolkua)</li>
+              <li>Yksikkötestaus Vitestillä fake-backendia vasten</li>
+            </ul>
+          </li>
+          <div class="designcomparison">
+            <figure>
+              <img src="images/testus menetelmät.png" alt="Old version" class="zoomable">
+              <figcaption>Testauksen menetelmät</figcaption>
+            </figure>
+
+            <span class="design-arrow">→</span>
+
+            <figure>
+              <img src="images/testaus työkalut.png" alt="New version" class="zoomable">
+              <figcaption>Testauksen työkalut</figcaption>
+            </figure>
+          </div>
+          <li><strong>Yhteistyö ja vastuun jakautuminen:</strong> Testaus toteutettiin yhteistyössä tiimin kanssa,
+            erityisesti PO-roolissa toimineen jäsenen kanssa. Alkuvaiheessa testaus jäi vähälle huomiolle, koska sille
+            ei ollut nimettyä vastuuhenkilöä. Projektin loppupuolella otin testausroolin vastuulleni muiden tehtävieni
+            ohella, mikä vaikutti testauksen laajuuteen, mutta mahdollisti kuitenkin tärkeimpien käyttäjäpolkujen
+            testaamisen ennen projektin päättymistä.</li>
+          <div class="designcomparison">
+            <figure>
+              <img src="images/yhteistyö.png" alt="Old version" class="zoomable">
+              <figcaption>Yhteistyö PO kanssa</figcaption>
+            </figure>
+
+            <span class="design-arrow">→</span>
+
+            <figure>
+              <img src="images/Iteratiivinen testaus.png" alt="New version" class="zoomable">
+              <figcaption>Iteratiivinen testaus</figcaption>
+            </figure>
+          </div>
+          <li><strong>Mitä opin:</strong>
+            <ul class="mitaopin">
+              <li>Opin, että testaus tulisi huomioida ja suunnitella jo projektin alkuvaiheessa</li>
+              <li>Ymmärsin, kuinka tärkeää on nimetä testaukselle selkeä vastuu</li>
+              <li>Opin tekemään Cypress-pohjaista end-to-end-testausta käyttäjäpolkujen kautta</li>
+              <li>Kehitin ymmärrystäni frontend-testauksen merkityksestä käytettävyyden ja saavutettavuuden
+                näkökulmasta.</li>
+              <li>Opin, että testauksen laajuus vaikuttaa suoraan sovelluksen luotettavuuteen.</li>
+            </ul>
+          </li>
+          <div class="designcomparison">
+            <figure>
+              <img src="images/ennen testaus.png" alt="Old version" class="zoomable">
+              <figcaption>Ennen testaus</figcaption>
+            </figure>
+
+            <span>→</span>
+
+            <figure>
+              <img src="images/testauksen jälkeen.png" alt="New version" class="zoomable">
+              <figcaption>Testauksen jälkeen</figcaption>
+            </figure>
+          </div>
+          <li><strong>Mitä tekisin nyt toisin:</strong> Jos aloittaisin projektin uudelleen, varmistaisin, että testaus
+            otetaan mukaan jo projektin alkuvaiheessa ja että sille nimetään selkeä vastuuhenkilö. Jakaisin
+            testausvastuuta tasaisemmin tiimin kesken ja aloittaisin yksikkötestauksen aikaisemmin, jotta testaus tukisi
+            kehitystä koko projektin ajan eikä vain loppuvaiheessa.</li>
         </ul>
       </div>
+
     </div>
+  </div>
+
+  <!-- muu tekinen osaaminen osio -->
+  <h3 class="extra-skills-title">Muu tekninen osaaminen TC aikana</h3>
+  <div class="extra-skills-grid">
+
+    <!-- KORTTI 1 -->
+    <div class="extra-skill-card">
+      <div class="icon">☁️</div>
+      <h4>Pilvi & integraatiot</h4>
+      <!-- Pilvikuva -->
+
+      <p>
+        Toteutin ratkaisun, jossa tuotteiden kuvat tallennettiin pilvipalveluun (S3), ja tietokantaan tallennettiin
+        vain viite kuvan sijaintiin. Lisäsin ja testasin tietoja paikallisesti MySQL Workbenchin avulla
+        SQL-kyselyillä, joilla kuvat liitettiin oikeisiin tuotteisiin.
+      </p>
+      <!-- <img src="images/moderni ikonikuva.png" alt="Pilvi ja integraatiot" class="zoomable"> -->
+      <div class="designcomparison">
+        <figure>
+          <img src="images/moderni ikonikuva.png" alt="Old version" class="zoomable">
+          <figcaption> Kuvien kulku S3 puketin</figcaption>
+        </figure>
+
+        <span>→</span>
+
+        <figure>
+          <img src="images/sql-kyselyt.png" alt="New version" class="zoomable">
+          <figcaption>sql-kyselyt</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- KORTTI 2 -->
+    <div class="extra-skill-card">
+      <div class="icon">🤝</div>
+      <h4>Tiimityö ja kommunikointi</h4>
+      <p>
+        Olin aktiivinen tiimin sisäisessä kommunikaatiossa ja pyysin rohkeasti apua
+        tarvittaessa. Samalla autoin muita esimerkiksi Figma-suunnittelun ohjeistuksessa,
+        Gitin käytössä sekä liiketoiminnallisten ratkaisujen hahmottamisessa.
+      </p>
+      <!-- <img src="images/tiimityö kuva.png" alt="Pilvi ja integraatiot" class="zoomable"> -->
+      <div class="designcomparison">
+        <figure>
+          <img src="images/tiimityö kuva.png" alt="Old version" class="zoomable">
+          <figcaption>Tiimityö</figcaption>
+        </figure>
+
+
+
+        <figure>
+          <img src="images/figma ohjeet.png" alt="New version" class="zoomable">
+          <figcaption>Figma ohjeet</figcaption>
+        </figure>
+      </div>
+    </div>
+
+  </div>
+
+
+  <section class="reflection-section">
+    <div class="reflection-container">
+
+      <!-- Vasen puoli -->
+      <div class="reflection-intro">
+        <h2>Reflektio</h2>
+        <p class="reflection-lead">
+          TC-projekti oli minulle merkittävä oppimiskokemus, joka selkeytti sekä omaa osaamistani että ammatillista
+          suuntaani ja myös auttoi minua ymmärtämään omaa osaamistani, vahvuuksiani ja suuntaani ohjelmistokehityksen
+          parissa.
+        </p>
+
+        <!-- Halutessasi kuva tai ikoni -->
+        <img src="images/reflection-illustration1.png" alt="Reflection illustration" class="reflection-image">
+      </div>
+
+
+      <!-- Oikea puoli -->
+      <div class="reflection-content">
+
+        <div class="reflection-block">
+          <h3>Mitä osasin ennen TC:tä ja mitä osaan nyt</h3>
+          <p>
+            Ennen TC-projektia minulla oli perustiedot käyttöliittymäsuunnittelusta (Figma), frontend-kehityksestä,
+            tietokannoista ja testauksesta. TC:n aikana ja sen jälkeen osaamiseni näillä alueilla syveni merkittävästi.
+            Opin hyödyntämään eri osa-alueita yhdessä, ymmärtämään niiden roolia kokonaisessa sovelluksessa sekä
+            työskentelemään varmemmin käytännön projektissa osana tiimiä.
+          </p>
+        </div>
+
+        <div class="reflection-block">
+          <h3>Mitkä tavoitteet toteutuivat ja mitkä eivät</h3>
+          <p>
+            TC-projektissa asettamani tavoitteet toteutuivat pääosin hyvin. Kehityin erityisesti
+            käyttöliittymäsuunnittelussa, frontend-kehityksessä sekä tiimityöskentelyssä. Lisäksi kehitin osaamistani
+            testauksessa, tietokantasuunnittelussa ja Gitin käytössä, jotka olivat myös alun perin omia tavoitteitani
+            projektin alussa.
+
+          </p>
+          <p>Yksi henkilökohtainen tavoitteeni oli päästä kokeilemaan enemmän myös backend-kehitystä. Tämä ei kuitenkaan
+            toteutunut toivomallani tavalla, sillä minulla oli projektin aikana useita muita rooleja ja vastuualueita,
+            jotka veivät suurimman osan ajasta ja keskittymisestä.</p>
+        </div>
+
+        <div class="reflection-block">
+          <h3>Mitä opin projektin aikana suunnitelman ulkopuolelta ja yhteistyöstä</h3>
+          <p>
+            Projektin aikana opin paljon myös alkuperäisen suunnitelman ulkopuolisia asioita. Suurin oivallus oli se,
+            että kaikkea ei tarvitse osata heti valmiiksi. Opin kehittämään ratkaisuja vaiheittain ja parantamaan niitä
+            palautteen ja testauksen avulla. Ymmärsin myös, kuinka tärkeää on tehdä aluksi yksinkertainen versio ja
+            kehittää sitä iteratiivisesti eteenpäin sen sijaan, että yrittäisi tehdä kaiken täydelliseksi kerralla.
+          </p>
+          <p>
+            Samalla kehitin merkittävästi tiimityö- ja vuorovaikutustaitojani. Opin kommunikoimaan avoimemmin, pyytämään
+            rohkeasti apua ja tukemaan muita tiimin jäseniä aina kun siihen oli mahdollisuus. Autoin esimerkiksi
+            Figma-ohjeissa, Gitin käytössä sekä liiketoiminnan ymmärtämisessä, mikä vahvisti yhteistyötä ja teki
+            työskentelystä sujuvampaa koko tiimille.
+          </p>
+        </div>
+
+
+
+        <div class="reflection-block">
+          <h3>Tulevaisuuden uratavoitteet ja osaamisen kehittäminen</h3>
+          <p>
+            Tulevaisuudessa haluan työskennellä frontend-kehityksen ja UI/UX-suunnittelun parissa. Olen erityisen
+            kiinnostunut myös tietokantasuunnittelusta ja haluaisin työskennellä rooleissa, joissa pääsen yhdistämään
+            näitä osa-alueita. Minua kiinnostavat erityisesti roolit, joissa pääsen tekemään käyttäjälähtöisiä
+            ratkaisuja ja kehittämään käyttöliittymiä, jotka ovat sekä visuaalisesti miellyttäviä että helppokäyttöisiä.
+          </p>
+          <p>
+            Haluan kehittää jatkossa backend-osaamistani,
+            tietokantojen syvempää ymmärrystä sekä
+            sovellusten kokonaisarkkitehtuurin hahmottamista.
+          </p>
+        </div>
+
+        <div class="reflection-block">
+          <h3>Vahvuuteni</h3>
+          <p>
+            Vahvuuksiani ovat visuaalinen ajattelu, käyttöliittymien selkeys sekä kyky yhdistää suunnittelu ja tekninen
+            toteutus. TC-projektin aikana nämä vahvuudet selkeytyivät entisestään, ja huomasin pystyväni toimimaan
+            useassa roolissa tarpeen mukaan, erityisesti Figma-suunnittelun ja frontend-toteutuksen välistä yhteistyötä
+            sekä tietokannan ja frontendin välisen datan sujuvaa kulun varmistamista.
+          </p>
+
+        </div>
+
+        <div class="reflection-block">
+          <h3>Miten TC tuki omia tavoitteitani</h3>
+          <p>
+            TC tarjosi mahdollisuuden oppia tekemällä
+            ja soveltaa teoriaa käytännössä oikeassa projektissa.
+            Se vahvisti varmuuttani omasta osaamisestani
+            ja työskentelystä osana tiimiä.
+          </p>
+        </div>
+
+
+        <div class="reflection-block">
+          <h3>Miksi valitsin juuri nämä työt portfolioon</h3>
+          <p>
+            Valitsin portfolioon työt, jotka kuvaavat parhaiten omaa rooliani, oppimistani ja vahvuuksiani
+            frontend-kehityksessä ja käyttöliittymäsuunnittelussa. Lisäksi ne osoittavat, että tietokantasuunnittelu,
+            testaus, Gitin käyttö sekä tiimityöskentely sujuvat minulta ja että olen pystynyt soveltamaan näitä
+            osa-alueita käytännön projekteissa.
+          </p>
+        </div>
+
+        <!-- Tiivistys -->
+        <div class="reflection-summary">
+          <p>
+            TC vahvisti suuntaani ohjelmistokehityksessä ja antoi varmuutta omasta osaamisestani osana tiimiä. Se
+            vahvisti myös motivaatiotani kehittyä edelleen frontend-kehittäjänä ja UI/UX-suunnittelijana.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
   </div>
   </div>
 
@@ -342,10 +891,42 @@
       });
     });
 
+
+
     document.getElementById('imageModal').addEventListener('click', () => {
       document.getElementById('imageModal').style.display = 'none';
       toggleContent('figma');
     });
+
+    // animaatio efektejä kun protfolio lataa eka kertaa
+    const animatedElements = document.querySelectorAll('.scroll-animate');
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+    animatedElements.forEach(el => observer.observe(el));
+
+    // kuvin vaihtuminen automaatisesti:
+    const slides = document.querySelectorAll('.reko-slide');
+    let current = 0;
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3500);
+
 
   </script>
 
