@@ -50,4 +50,5 @@ Sovellusta esiteltiin myös JAMKin Hakijan päivässä, jossa saatiin positiivis
 
 ### 🔗 Linkit
 
-GitHub-repo: (https://ramomaya.github.io/TC-Portfolio/)
+- GitHub-repo: (https://ramomaya.github.io/TC-Portfolio/)
+- RekoRinki GitHub-repo: (https://github.com/jamktiko/RekoRinki.git)
